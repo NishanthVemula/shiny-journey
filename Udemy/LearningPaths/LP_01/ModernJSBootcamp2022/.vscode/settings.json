@@ -1,0 +1,14 @@
+{
+    "debug.console.collapseIdenticalLines": false,
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.NoBrowser": false,
+    "liveServer.settings.ignoreFiles": [
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass"
+    ],
+    "window.zoomLevel": 1,
+    "html.format.indentInnerHtml": true,
+    "html.format.extraLiners": "",
+    "editor.formatOnSave": true
+}
