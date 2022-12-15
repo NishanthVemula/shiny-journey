@@ -7,8 +7,12 @@
         "**/*.scss",
         "**/*.sass"
     ],
-    "window.zoomLevel": 1,
-    "html.format.indentInnerHtml": true,
+    // Others
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": false,
     "html.format.extraLiners": "",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "html.format.wrapAttributes": "aligned-multiple",
+    "explorer.sortOrderLexicographicOptions": "default",
+    "explorer.sortOrder": "foldersNestsFiles"
 }

@@ -2,10 +2,45 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #F6F8FA !important;
+    color: #333;
+}
+
+header {
+    background-color: #B0C1F4 !important;
+    color: #333;
+    padding: 2%;
+}
+
 .bg-dark-custom {
     background-color: #303446 !important;
 }
 
+.text-light-custom {
+    color: white;
+}
+
 .border-light-custom {
     border: 1px solid #fff !important;
+}
+
+.h4-custom {
+    background-color: teal;
+    padding: 10px;
+    border-radius: 10px;
+    color: #EEE;
+    text-align: center;
+}
+
+.h5-custom {
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-dark-custom {
+    background-color: #606892 !important;
+    color: #EDEDED;
 }
