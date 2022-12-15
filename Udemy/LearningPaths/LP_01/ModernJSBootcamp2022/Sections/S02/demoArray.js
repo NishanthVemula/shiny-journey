@@ -137,36 +137,69 @@ function demoArray5() {
     console.group("Concat")
 
     let someArray = ['red', 'green', 'blue']
-    console.log(`$ let someArray = ['red', 'green', 'blue']\n\tsomeArray = `, someArray)
+    console.log(`$ let someArray = ['red', 'green', 'blue']`)
+    console.log(`\tsomeArray.toString() = `, someArray.toString())
 
     let secondArray = ['Cat', 'Dog', 'Tiger']
-    console.log(`$ let secondArray = ['Cat', 'Dog', 'Tiger']\n\tsecondArray = `, secondArray)
+    console.log(`$ let secondArray = ['Cat', 'Dog', 'Tiger']`)
+    console.log(`\tsecondArray.toString() = `, secondArray.toString())
 
     let thirdArray = someArray.concat(secondArray), fourthArray = secondArray.concat(someArray)
     console.log('$ let thirdArray = someArray.concat(secondArray), fourthArray = secondArray.concat(someArray)')
-    console.log('\tsomeArray = ', someArray)
-    console.log('\tsecondArray = ', secondArray)
-    console.log('\tthirdArray = ', thirdArray)
-    console.log('\tfourthArray = ', fourthArray)
+    console.log('\tsomeArray.toString() = ', someArray.toString())
+    console.log('\tsecondArray.toString() = ', secondArray.toString())
+    console.log('\tthirdArray.toString() = ', thirdArray.toString())
+    console.log('\tfourthArray.toString() = ', fourthArray.toString())
 
     console.groupEnd()
 }
 
 function demoArray6() {
-    console.group("Reverse")
+    console.group("Reverse - Mutating")
 
     let someArray = ['red', 'green', 'blue']
-    console.log(`$ let someArray = ['red', 'green', 'blue']\n\tsomeArray = `, someArray)
+    console.log(`$ let someArray = ['red', 'green', 'blue']`)
+    console.log(`\tsomeArray.toString() = `, someArray.toString())
 
     let newArray = someArray.reverse()
-    console.log(`$ let newArray = someArray.reverse()\n\tsomeArray = `, someArray, `\n\tnewArray = `, newArray)
+    console.log(`$ let newArray = someArray.reverse()`)
+    console.log(`\tnewArray.toString() = `, newArray.toString())
+    console.log(`\tsomeArray.toString() = `, someArray.toString())
 
-    console.log(`$ someArray == newArray\n\t${someArray == newArray}`)
+    console.log(`$ someArray == newArray\tis ${someArray == newArray}`)
 
     console.groupEnd()
 }
 
 function demoArray7() {
+    console.group("Join")
+
+    let someArray1 = ['red', 'green', 'blue']
+    console.log(`$ let someArray1 = ['red', 'green', 'blue']`)
+    console.log(`\tsomeArray1.toString() = `, someArray1.toString())
+
+    let joinedArray = someArray1.join()
+    console.log(`$ let joinedArray = someArray1.join()`)
+    console.log(`\tjoinedArray = `, joinedArray)
+    console.log(`\tsomeArray1 = `, someArray1)
+    console.log(`\tsomeArray1.toString() = `, someArray1.toString())
+
+    joinedArray = someArray1.join('')
+    console.log(`joinedArray = someArray1.join('')`)
+    console.log(`\tjoinedArray = `, joinedArray)
+    console.log(`\tsomeArray1 = `, someArray1)
+    console.log(`\tsomeArray1.toString() = `, someArray1.toString())
+
+    joinedArray = someArray1.join(' ')
+    console.log(`joinedArray = someArray1.join(' ')`)
+    console.log(`\tjoinedArray = `, joinedArray)
+    console.log(`\tsomeArray1 = `, someArray1)
+    console.log(`\tsomeArray1.toString() = `, someArray1.toString())
+
+    console.groupEnd()
+}
+
+function demoArray8() {
     console.group("IndexOf & Includes")
 
     let someArray = ['red', 'green', 'blue']
