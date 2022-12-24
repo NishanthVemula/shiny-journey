@@ -10,7 +10,7 @@
             "reAttach": true,
             "name": "Firefox File System",
             "file": "${workspaceFolder}/index.html",
-            "clearConsoleOnReload": true,
+            "clearConsoleOnReload": false,
             "presentation": {
                 "hidden": false,
                 "group": "File System",
