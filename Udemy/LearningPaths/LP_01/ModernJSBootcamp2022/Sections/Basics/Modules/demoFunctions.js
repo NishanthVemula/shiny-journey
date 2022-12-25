@@ -1,4 +1,4 @@
-import { generateLogDemoObject } from "../../Utils/utils.js";
+import { generateLogDemoObject } from "../../../Utils/utils.js";
 
 const logDemoOptions = { withCode: false, collapseLog: false }
 let order = 10
