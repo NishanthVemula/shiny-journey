@@ -1,368 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Javascript Bootcamp 2022</title>
-    <link rel="stylesheet" type="text/css" href="styles/css-reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modern Javascript Bootcamp 2022</title>
+	<link rel="stylesheet" type="text/css" href="styles/css-reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
 <body>
-    <header class="sticky-top">
-        <div class="custom-header">
-            <h1>Modern Javascript Bootcamp 2022</h1>
-            <h2>Learning Path: 01</h2>
-            <h3>Course: 1 / 4</h3>
-        </div>
-    </header>
-    
-    <main class="container-fluid main">
-        <section class="row mt-2 mb-3 justify-content-center">
-            <h4 class="h4-custom">Section 1: Introduction</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card my-2">
-                    <div class="card-body">
-                        <h5 class="card-title">Introduction</h5>
-                        <br>
-                        <ul class="list-group">
-                            <li class="list-group-item">JAVASCRIPT</li>
-                            <li class="list-group-item">ECMASCRIPT</li>
-                            <li class="list-group-item">ECMA</li>
-                            <li class="list-group-item">TC39</li>
-                            <li class="list-group-item">ES6(ES2015), ES7(2016) ...</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-center">
-            <h4 class="h4-custom">Section 2: JS Values and Variables</h4>
-            <article class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
-                <div class="card my-2">
-                    <div class="card-body">
-                        <h5 class="card-title">Primitive Types</h5>
-                        <br>
-                        <ul class="list-group">
-                            <li class="list-group-item">Numbers</li>
-                            <li class="list-group-item">String</li>
-                            <li class="list-group-item">Boolean</li>
-                            <li class="list-group-item">Null</li>
-                            <li class="list-group-item">Undefined</li>
-                            <!-- Special -->
-                            <li class="list-group-item">Symbol, BigInt</li>
-                        </ul>
-                        <br>
-                        <div class="row text-center m-1">
-                            <button type="button" class="btn btn-dark-custom m-1 col" onclick="demoNumbers()">Number</button>
-                            <button type="button" class="btn btn-dark-custom m-1 col" onclick="demoStrings()">String</button>
-                            <button type="button" class="btn btn-dark-custom m-1 col" onclick="demoMath()">Math</button>
-                            <button type="button" class="btn btn-dark-custom m-1 col" onclick="demoParse()">Parse</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-start">
-            <h4 class="h4-custom">Section 4: Control Program Logic and Flow</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center m-1">
-                        <h5 class="card-title">Comparision</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1" onclick="demoCompare1()">Numbers</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1" onclick="demoCompare2()">Characters</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1" onclick="demoCompare3()">Strings</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1" onclick="demoCompare4()">Accross Types</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Truthy / Falsy</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-10 my-1" onclick="demoTruthy()">Demo Truthy</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1" onclick="demoFalsy()">Demo Falsy</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-start">
-            <h4 class="h4-custom">Section 5: Arrays</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Basics</h5>
-                        <div class="row justify-content-around m-1">
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" 
-                                type="button" onclick="demoArray1()">Create and Access</button>
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" 
-                                type="button" onclick="demoArray2()">Compare</button>
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" 
-                                type="button" onclick="demoArray3()">Push & Pop</button>
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" 
-                                type="button" onclick="demoArray4()">Shift & Unshift</button>
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" 
-                                type="button" onclick="demoArray5()">Concat</button>
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" 
-                                type="button" onclick="demoArray6()">Reverse</button>
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 col-lg-5 m-1" 
-                                type="button" onclick="demoArray7()">Join</button>
-                            <button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 col-lg-5 m-1" 
-                                type="button" onclick="demoArray8()">IndexOf & Include</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Methods</h5>
-                        <div class="row justify-content-around m-1">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                                onclick="demoArrayMethods1()">Slice</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                                onclick="demoArrayMethods2()">Splice</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                                onclick="demoArrayMethods3()">Sort</button>
+	<header class="sticky-top">
+		<div class="custom-header">
+			<h1>Modern Javascript Bootcamp 2022</h1>
+			<h2>Learning Path: 01</h2>
+			<h3>Course: 1 / 4</h3>
+		</div>
+	</header>
 
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-start">
-            <h4 class="h4-custom">Section 6: Objects</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Basics</h5>
-                        <div class="row justify-content-around m-1">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                                onclick="demoJSObjects()">JS Objects</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                                onclick="demoObjectsAccess()">Access</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                                onclick="demoObjectsComparision()">Comparision & Nesting</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-start">
-            <h4 class="h4-custom">Section 7: Loops</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">For Loop</h5>
-                        <div class="row justify-content-around m-1">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoForLoop">Basic For</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoNestedForLoop">Nested For</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoNestedForLoop2">Nested For 2</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoBreakingForLoop">Breaking the Loop</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">While Loop</h5>
-                        <div class="row justify-content-around m-1">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="whileLoopDemo">While Loop</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="nestedWhileLoopDemo">Nested While</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="nestedWhileLoopDemo2">Nested While 2</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoBreakingWhileLoop">Breaking the Loop</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Other Loops</h5>
-                        <div class="row justify-content-around m-1">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="forOfLoopDemo">For Of Loop (Array)</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="forOfLoopDemo2">For Of Loop (String)</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="forInLoopDemo">For In Loop (Object)</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="forInLoopDemo2">For In Loop (String)</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Loop Examples</h5>
-                        <div class="row justify-content-around m-1">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoLoopSquareStars">Square Stars</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoRightTriangleStars">L -> Bottom Left</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoRightTriangle2">L -> Top Right</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoRightTriangle3">L -> Bottom Right</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoRightTriangle4">L -> Top Left</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
-                            id="demoIsocelesStars">Isoceles Triangle Stars</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-start">
-            <h4 class="h4-custom">Section 8: Functions</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Demos</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoFunctions1">Demo 1</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoFunctions2">Demo 2</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoFunctions3">Demo 3</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoFunctions4">Demo 4</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Scope</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-10 my-1 disabled">Function Scope</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1 disabled"">Block Scope</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoFunctions5">Lexical Scope</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoFunctions6">Function Expression</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Higher Order Functions</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoHOF1">demo HOF 1</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoHOF2">demo HOF 2</button>
-                            <button type="button" class="btn btn-dark-custom col-10 my-1"
-                                id="demoHOF3">demo HOF 3</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-start">
-            <h4 class="h4-custom">Section 10: Apply Functions to Collections of Data</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Demos</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArrayForEach">ForEach</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArrayMap">Map</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArrayFind">Find</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArrayFilter">Filter</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArraySome&Every">Some & Every</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Demos</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArraySortStrings">Sort - Strings</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArraySortNumbers">Sort - Numbers</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArraySortObjects">Sort - Objects</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoArrayReduce">Sort - Reduce</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="row mt-2 mb-3 justify-content-start">
-            <h4 class="h4-custom">Section 11: Miscellaneous JS Features</h4>
-            <article class="col-xs-12 col-sm-12 col-md-6">
-                <div class="card my-2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Demos</h5>
-                        <div class="row justify-content-around">
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoRestAndSpread">Rest & Spread</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoDefaultFnParams">Default Function Parameters</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoDestructureArrays"> Destructuring - Arrays</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoDestructureObjects"> Destructuring - Objects</button>
-                            <button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
-                                id="demoNestedDestructuring"> Destructuring - Nested</button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
+	<main class="container-fluid main">
+		<section class="row mt-2 mb-3 justify-content-center">
+			<h4 class="h4-custom">Section 1: Introduction</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card my-2">
+					<div class="card-body">
+						<h5 class="card-title">Introduction</h5>
+						<br>
+						<ul class="list-group">
+							<li class="list-group-item">JAVASCRIPT</li>
+							<li class="list-group-item">ECMASCRIPT</li>
+							<li class="list-group-item">ECMA</li>
+							<li class="list-group-item">TC39</li>
+							<li class="list-group-item">ES6(ES2015), ES7(2016) ...</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-center">
+			<h4 class="h4-custom">Section 2: JS Values and Variables</h4>
+			<article class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
+				<div class="card my-2">
+					<div class="card-body">
+						<h5 class="card-title">Primitive Types</h5>
+						<br>
+						<ul class="list-group">
+							<li class="list-group-item">Numbers</li>
+							<li class="list-group-item">String</li>
+							<li class="list-group-item">Boolean</li>
+							<li class="list-group-item">Null</li>
+							<li class="list-group-item">Undefined</li>
+							<!-- Special -->
+							<li class="list-group-item">Symbol, BigInt</li>
+						</ul>
+						<br>
+						<div class="row text-center m-1">
+							<button type="button" class="btn btn-dark-custom m-1 col"
+									onclick="demoNumbers()">Number</button>
+							<button type="button" class="btn btn-dark-custom m-1 col"
+									onclick="demoStrings()">String</button>
+							<button type="button" class="btn btn-dark-custom m-1 col" onclick="demoMath()">Math</button>
+							<button type="button" class="btn btn-dark-custom m-1 col"
+									onclick="demoParse()">Parse</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-start">
+			<h4 class="h4-custom">Section 4: Control Program Logic and Flow</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center m-1">
+						<h5 class="card-title">Comparision</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									onclick="demoCompare1()">Numbers</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									onclick="demoCompare2()">Characters</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									onclick="demoCompare3()">Strings</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									onclick="demoCompare4()">Accross Types</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Truthy / Falsy</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-10 my-1" onclick="demoTruthy()">Demo
+								Truthy</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1" onclick="demoFalsy()">Demo
+								Falsy</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-start">
+			<h4 class="h4-custom">Section 5: Arrays</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Basics</h5>
+						<div class="row justify-content-around m-1">
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" type="button"
+									onclick="demoArray1()">Create and Access</button>
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" type="button"
+									onclick="demoArray2()">Compare</button>
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" type="button"
+									onclick="demoArray3()">Push & Pop</button>
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" type="button"
+									onclick="demoArray4()">Shift & Unshift</button>
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" type="button"
+									onclick="demoArray5()">Concat</button>
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-3 col-lg-3 m-1" type="button"
+									onclick="demoArray6()">Reverse</button>
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 col-lg-5 m-1" type="button"
+									onclick="demoArray7()">Join</button>
+							<button class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 col-lg-5 m-1" type="button"
+									onclick="demoArray8()">IndexOf & Include</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Methods</h5>
+						<div class="row justify-content-around m-1">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									onclick="demoArrayMethods1()">Slice</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									onclick="demoArrayMethods2()">Splice</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									onclick="demoArrayMethods3()">Sort</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    
-    <script type="text/Javascript" src="Sections/Basics/jsText/demoPrimitiveTypes.js" ></script>
-    <script type="text/Javascript" src="Sections/Basics/jsText/demoControlFlow.js" ></script>
-    <script type="text/Javascript" src="Sections/Basics/jsText/demoArray.js" ></script>
-    <script type="text/Javascript" src="Sections/Basics/jsText/demoArrayMethods.js" ></script>
-    <script type="text/Javascript" src="Sections/Basics/jsText/demoJSObjects.js" ></script>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-start">
+			<h4 class="h4-custom">Section 6: Objects</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Basics</h5>
+						<div class="row justify-content-around m-1">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									onclick="demoJSObjects()">JS Objects</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									onclick="demoObjectsAccess()">Access</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									onclick="demoObjectsComparision()">Comparision & Nesting</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-start">
+			<h4 class="h4-custom">Section 7: Loops</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">For Loop</h5>
+						<div class="row justify-content-around m-1">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoForLoop">Basic For</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoNestedForLoop">Nested For</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoNestedForLoop2">Nested For 2</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoBreakingForLoop">Breaking the Loop</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">While Loop</h5>
+						<div class="row justify-content-around m-1">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="whileLoopDemo">While Loop</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="nestedWhileLoopDemo">Nested While</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="nestedWhileLoopDemo2">Nested While 2</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoBreakingWhileLoop">Breaking the Loop</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Other Loops</h5>
+						<div class="row justify-content-around m-1">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="forOfLoopDemo">For Of Loop (Array)</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="forOfLoopDemo2">For Of Loop (String)</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="forInLoopDemo">For In Loop (Object)</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="forInLoopDemo2">For In Loop (String)</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Loop Examples</h5>
+						<div class="row justify-content-around m-1">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoLoopSquareStars">Square Stars</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoRightTriangleStars">L -> Bottom Left</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoRightTriangle2">L -> Top Right</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoRightTriangle3">L -> Bottom Right</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoRightTriangle4">L -> Top Left</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-3 col-md-3 m-1"
+									id="demoIsocelesStars">Isoceles Triangle Stars</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-start">
+			<h4 class="h4-custom">Section 8: Functions</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Demos</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoFunctions1">Demo
+								1</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoFunctions2">Demo
+								2</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoFunctions3">Demo
+								3</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoFunctions4">Demo
+								4</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Scope</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-10 my-1 disabled">Function
+								Scope</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1 disabled"">Block Scope</button>
+                            <button type=" button" class="btn btn-dark-custom col-10 my-1" id="demoFunctions5">Lexical
+								Scope</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoFunctions6">Function
+								Expression</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Higher Order Functions</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoHOF1">demo HOF
+								1</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoHOF2">demo HOF
+								2</button>
+							<button type="button" class="btn btn-dark-custom col-10 my-1" id="demoHOF3">demo HOF
+								3</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-start">
+			<h4 class="h4-custom">Section 10: Apply Functions to Collections of Data</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Demos</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArrayForEach">ForEach</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArrayMap">Map</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArrayFind">Find</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArrayFilter">Filter</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArraySome&Every">Some & Every</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Demos</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArraySortStrings">Sort - Strings</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArraySortNumbers">Sort - Numbers</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArraySortObjects">Sort - Objects</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoArrayReduce">Sort - Reduce</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row mt-2 mb-3 justify-content-start">
+			<h4 class="h4-custom">Section 11: Miscellaneous JS Features</h4>
+			<article class="col-xs-12 col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body text-center">
+						<h5 class="card-title">Demos</h5>
+						<div class="row justify-content-around">
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoRestAndSpread">Rest & Spread</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoDefaultFnParams">Default Function Parameters</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoDestructureArrays"> Destructuring - Arrays</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoDestructureObjects"> Destructuring - Objects</button>
+							<button type="button" class="btn btn-dark-custom col-xs-10 col-sm-5 col-md-5 m-1"
+									id="demoNestedDestructuring"> Destructuring - Nested</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
 
-    <script type="module" src="Sections/Basics/Modules/demoLoops.js"></script>
-    <script type="module" src="Sections/Basics/Modules/demoLoops2.js"></script>
-    <script type="module" src="Sections/Basics/Modules/demoLoops3.js"></script>
-    <script type="module" src="Sections/Basics/Modules/demoFunctions.js"></script>
-    <script type="module" src="Sections/Basics/Modules/demoFunctions2.js"></script>
-    <script type="module" src="Sections/Basics/Modules/demoHOF.js"></script>
-    <script type="module" src="Sections/Basics/Modules/demoArrayMethods2.js"></script>
-    <script type="module" src="Sections/Basics/Modules/demoMisc1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+			crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+			crossorigin="anonymous"></script>
 
+	<script type="text/Javascript" src="Sections/Basics/jsText/demoPrimitiveTypes.js"></script>
+	<script type="text/Javascript" src="Sections/Basics/jsText/demoControlFlow.js"></script>
+	<script type="text/Javascript" src="Sections/Basics/jsText/demoArray.js"></script>
+	<script type="text/Javascript" src="Sections/Basics/jsText/demoArrayMethods.js"></script>
+	<script type="text/Javascript" src="Sections/Basics/jsText/demoJSObjects.js"></script>
 
+	<script type="module" src="Sections/Basics/Modules/demoLoops.js"></script>
+	<script type="module" src="Sections/Basics/Modules/demoLoops2.js"></script>
+	<script type="module" src="Sections/Basics/Modules/demoLoops3.js"></script>
+	<script type="module" src="Sections/Basics/Modules/demoFunctions.js"></script>
+	<script type="module" src="Sections/Basics/Modules/demoFunctions2.js"></script>
+	<script type="module" src="Sections/Basics/Modules/demoHOF.js"></script>
+	<script type="module" src="Sections/Basics/Modules/demoArrayMethods2.js"></script>
+	<script type="module" src="Sections/Basics/Modules/demoMisc1.js"></script>
 </body>
-
 
 </html>
