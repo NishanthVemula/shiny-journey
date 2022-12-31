@@ -1,18 +1,21 @@
 {
-    "debug.console.collapseIdenticalLines": false,
-    "liveServer.settings.port": 5500,
-    "liveServer.settings.NoBrowser": false,
-    "liveServer.settings.ignoreFiles": [
-        ".vscode/**",
-        "**/*.scss",
-        "**/*.sass"
-    ],
-    // Others
-    "html.format.endWithNewline": true,
-    "html.format.indentInnerHtml": false,
-    "html.format.extraLiners": "",
-    "editor.formatOnSave": true,
-    "html.format.wrapAttributes": "aligned-multiple",
-    "explorer.sortOrderLexicographicOptions": "default",
-    "explorer.sortOrder": "foldersNestsFiles"
+	"debug.console.collapseIdenticalLines": false,
+	"liveServer.settings.port": 5500,
+	"liveServer.settings.NoBrowser": false,
+	"liveServer.settings.ignoreFiles": [
+		".vscode/**",
+		"**/*.scss",
+		"**/*.sass"
+	],
+	// Others
+	"editor.formatOnSave": true,
+	"html.format.endWithNewline": true,
+	"html.format.indentInnerHtml": false,
+	"html.format.extraLiners": "",
+	"html.format.wrapAttributes": "force-aligned",
+	"explorer.sortOrderLexicographicOptions": "default",
+	"explorer.sortOrder": "foldersNestsFiles",
+	"html.suggest.html5": true,
+	"html.format.wrapLineLength": 120,
+	"html.format.preserveNewLines": true,
 }
