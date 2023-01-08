@@ -604,6 +604,71 @@
 				</div>
 			</article>
 		</section>
+		<section class="row mb-3 mt-2 justify-content-start">
+			<h4 class="h4-custom">Section 13: Document Object Model - DOM</h4>
+			<article class="col-sm-12 col-md-6">
+				<div class="card my-2">
+					<div class="card-body justify-content-center">
+						<h4 class="card-title">Selection</h4>
+						<hr>
+						<div class="row my-2 justify-content-around">
+							<button class="btn btn-dark-custom m-1 col-xs-10 col-sm-5 col-md-5"
+									type="button"
+									id="demoGetElById">
+								Get Element By Id
+							</button>
+							<p class="btn btn-info m-1 col-xs-10 col-sm-5 col-md-5 text-center"
+							   id="demo-get-el-id">
+								--- Original ---
+							</p>
+						</div>
+						<div class="row my-2 justify-content-around">
+							<button class="btn btn-dark-custom m-1 col-xs-10 col-sm-5 col-md-5"
+									type="button"
+									id="demoGetElByTagName">
+								Get Element By Tag Name
+							</button>
+							<p class="btn btn-info m-1 col-xs-10 col-sm-5 col-md-5 text-center"
+							   id="demo-get-el-tag-name">Observe Changes in Header Tag</p>
+						</div>
+						<div class="row my-2 justify-content-around">
+							<button class="btn btn-dark-custom m-1 col-xs-10 col-sm-5 col-md-5"
+									type="button"
+									id="demoGetElByClassName">
+								Get Element By Class Name
+							</button>
+							<p class="btn btn-info m-1 col-xs-10 col-sm-5 col-md-5 text-center"
+							   id="demo-get-el-class-name">Observe Changes in Header Tag</p>
+						</div>
+						<hr>
+						<div class="row my-2 justify-content-around">
+							<button class="btn btn-dark-custom m-1 col-xs-10 col-sm-5 col-md-5"
+									type="button"
+									id="demoQuerySelector">
+								Get Element By `Query Selector`
+							</button>
+							<div class="btn btn-info m-1 col-xs-10 col-sm-5 col-md-5 text-center"
+								 id="demo-Query-Selector">
+								<ul id="demo-q-s-ul"
+									class="m-0 p-0">
+									<li id="demo-q-s-ul-li-1">--> : id is `q-s-li-1`</li>
+									<li class="demo-q-s-ul-li-2">--> : class is `q-s-li-2</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row my-2 justify-content-around">
+							<button class="btn btn-dark-custom m-1 col-xs-10 col-sm-5 col-md-5"
+									type="button"
+									id="demoQuerySelectorAll">
+								Get Elements By `Query Selector All`
+							</button>
+							<p class="btn btn-info m-1 col-xs-10 col-sm-5 col-md-5 text-center"
+							   id="demo-Query-Selector-All">Observe Changes Carefully</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
 	</main>
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -642,5 +707,7 @@
 			src="Sections/Basics/Modules/demoMisc1.js"></script>
 	<script type="module"
 			src="Sections/Basics/Modules/demoObjMethodsThis.js"></script>
+	<script type="module"
+			src="Sections/DOM/dom1.js"></script>
 </body>
 </html>

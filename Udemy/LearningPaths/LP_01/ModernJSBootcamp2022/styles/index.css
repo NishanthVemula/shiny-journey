@@ -75,3 +75,33 @@ header {
     background-color: #606892 !important;
     color: #EDEDED;
 }
+
+.demo-get-el-id-1 {
+    border: 5px solid #0E86D4 !important;
+    background-color: #0E86D4;
+    color: #FFF;
+    border-radius: 1rem;
+}
+
+.demo-get-el-id-2 {
+    /* border: 1px solid #009999 !important; */
+    border: 5px solid #055C9D !important;
+    background-color: #055C9D;
+    color: #FFF;
+    border-radius: 1rem;
+}
+
+.demo-get-el-tag-name {
+    /* border: 5px solid red; */
+    background-color: red !important;
+}
+
+.demo-get-el-class-name {
+    /* border: 5px solid blue; */
+    background-color: blue !important;
+}
+
+#demo-get-el-tag-name,
+#demo-get-el-class-name {
+    pointer-events: none;
+}
